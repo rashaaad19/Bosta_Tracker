@@ -1,0 +1,152 @@
+.shipmentHeader {
+  padding: 1em;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #f0dfdf;
+}
+.headerContainer {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.headerContainerAR{
+   flex-direction: row-reverse;
+}
+.headerContainerEN{
+   flex-direction: row;
+}
+.shipmentNumber p,
+.shipmentUpdate,
+.shipmentSeller,
+.shipmentArrival {
+  color: #667085;
+  font-size: 0.9em;
+}
+.shipmentHeader h1 {
+  color: #111619;
+  font-size: 1.2em;
+}
+.shipmentNumber h1 {
+  color: orange;
+}
+.shipmentHeader hr {
+  border-top-color: #ffffff54;
+}
+
+
+.shipmentDetails{
+   padding-top: 1.5em;
+   display: flex;
+   justify-content: space-around;
+   align-items: flex-end;
+}
+.shipmentDetailsAR{
+flex-direction: row;
+}
+.shipmentDetailsEN{
+   flex-direction: row-reverse;
+}
+.shipmentDetails>h2, .shipmentDetails>p{
+   text-align: right;
+}
+.addressDetailsAR{
+   text-align: right;
+
+}
+.addressDetailsEN{
+   text-align: left;
+}
+.addressProblem{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.report{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 15px;
+}
+.report p {
+   text-align: right;
+}
+.report a{
+   background: #e30613;
+   padding: 0.3em 1.5em;
+   border-radius: 10px;
+   color: white;
+   cursor: pointer;
+   width: 100%;
+   text-align: center;
+}
+.addressProblem img {
+   width: 10em;
+}
+.shipmentDetails table{
+   border-collapse: collapse;
+}
+.shipmentDetails table caption{
+   padding-bottom: 0.5em;
+   font-size: 1.2em;
+}
+.tableHeaderAR{
+   text-align: right;
+}
+.tableHeaderEN{
+   text-align: left;
+}
+.shipmentDetails table td,.shipmentDetails table th{
+   border: 1px solid #f0dfdf;
+   padding: 1.2em;
+}
+.shipmentDetails table th{
+   color: #667085;
+}
+.shipmentDetails table td{
+   color: #111619;
+}
+
+@media (max-width: 767px) {
+  .shipmentHeader {
+    padding: 0.2em;
+  }
+  .headerContainer {
+    gap: 20px;
+    padding-bottom: 1.2em;
+  }
+  .headerContainer > div {
+    max-width: 5em;
+  }
+  .shipmentDetails{
+   flex-direction: column;
+  }
+  .shipmentDetails table td,.shipmentDetails table th{
+   padding: 0.5em;
+  }
+  .shipmentNumber  {
+font-size: 0.8em;  
+}
+  .shipmentUpdate{
+   font-size: 0.8em;
+  }
+
+}
+
+
+
+.container {
+   display: flex;
+   align-items: center;
+ }
+
+ .container h5 {
+   margin: 0;
+   padding: 0;
+  }
+
+ .container hr {
+   flex-grow: 1;
+   border: none;
+   height: 1px;
+   background-color: #000; /* Set the color of the horizontal line */
+ }

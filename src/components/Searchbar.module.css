@@ -1,0 +1,31 @@
+.container {
+  text-align: center;
+  padding-top: 2em;
+  height: 100vh;
+  background: url('/public/assets/images/211acba433dca873bf3c6d79b31d53ed.png'),aliceblue;
+  background-blend-mode: darken;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+.container h1{
+    color: #111619;
+}
+.searchBar {
+  width: 35%;
+  padding: 1em;
+  font-size: 0.9em;
+  outline: none;
+  border:none;
+}
+.container h2{
+    color: #e30613;
+    padding-top: 2em;
+}
+.searchBar:focus{
+    box-shadow:0 0 5px 1px cadetblue;
+}
+@media (max-width:768px)  {
+    .searchBar{
+        width: 80%;
+    }
+}

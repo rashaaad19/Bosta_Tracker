@@ -1,0 +1,57 @@
+.navbar{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.navbar img{
+    width: 8em;
+    height: 4em;
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    gap:40px;
+}
+.track{
+    font-size: 1.2em;
+    color: #e30613;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    gap: 2em;
+}
+.container button {
+    color: #4f5665;
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+
+}
+
+.navbarAR{
+    flex-direction: row-reverse;
+}
+.navbarEN{
+    flex-direction: row;
+}
+
+@media (max-width:767px) {
+    .container {
+        gap: 0px;
+        align-items: center;
+    }
+    .navbar{
+        padding: 0.2em 0;
+
+    }
+    .shipmentHeader{
+        padding: 0.2em;
+        width: 100%;
+        margin: 0;
+    }
+    
+
+}
